@@ -1,0 +1,215 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contenedor
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff; 
+    margin: 50px;  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.contenedor .lado_izquierdo
+{
+    position: relative;
+    background-color: rgb(74, 192, 228);
+    padding: 10px;
+}
+.textodelperfil
+{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(255,255,255,0.2) ;
+}
+.textodelperfil .mi_foto
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 50%;
+    overflow: hidden;
+}
+
+.textodelperfil .mi_foto img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textodelperfil h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.textodelperfil h2 span
+{
+    font-size: 0.8em;
+    font-weight:300 ;
+}
+.información_de_contacto
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+.información_de_contacto ul
+{
+    position: relative;
+}
+.información_de_contacto ul li
+{
+position: relative;
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
+}
+.información_de_contacto ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:#000000;
+}
+.información_de_contacto ul li span
+{
+color: #fff;
+font-weight: 300;
+}
+
+.información_de_contacto.académico li
+{
+margin-bottom: 15px;
+}
+.información_de_contacto.académico h3
+{
+    color: #000507;
+    font-weight: 5000;
+}
+.información_de_contacto.académico h4:nth-child(2)
+{
+    color: rgb(0, 0, 7);
+    font-weight: 5000;
+}
+.información_de_contacto.académico h5
+{
+    color: rgb(255, 255, 255);
+    font-weight: 3000;
+}
+.información_de_contacto.idiomas .percent 
+{
+position: relative;
+width: 100%;
+height: 6px;
+background: #081920;
+display: block;
+margin-top: 5px;
+}
+.información_de_contacto.idiomas .percent  div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.contenedor .lado_derecho
+{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;    
+}
+.sobre_mi
+{
+    margin-bottom: 50px;
+}
+.sobre_mi:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #3ea4e7;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    margin-bottom: 10px;
+    
+}
+p
+{
+    color: #333;
+}
+.sobre_mi .box
+{
+    display: flex;
+    flex-direction:column;
+    margin: 20px 0;
+}
+.sobre_mi .box .año_trabajo
+{
+    min-width: 155px;
+}
+.sobre_mi .box .año_trabajo h5
+{
+    text-transform: uppercase;
+    color: rgb(221, 8, 8);
+    font-weight: 1000;
+}
+.sobre_mi .box .text h4
+{
+    text-transform: uppercase;
+    color: rgb(2, 8, 0);
+    font-size:15px;
+}
+
+.mis_pasatiempos ul
+{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.mis_pasatiempos ul li
+{
+    list-style-type: style;
+    color: rgb(0, 0, 0);
+    font-family: 500;
+    margin: 10px 0;
+}
+.mis_pasatiempos ul li .fa 
+{
+    color: #115481;
+    font-size: 14px;
+    width:30px;
+}
